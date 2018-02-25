@@ -1,0 +1,117 @@
+//button {
+  width: auto;
+  height: 80px;
+  font-family: "helvetica";
+  font-size: 18px;
+  //background-color: #c19b6c;
+  
+  
+}
+
+.mybuttonclass1 {
+  background-image: url(https://i.warosu.org/data/sci/img/0067/71/1411506402282.png);
+  background-repeat: repeat-space;
+  //border: none;
+  background-size: 50px 50px;
+  height: 60px;
+  width: 50px;
+  border-width: 5px;
+  
+}
+
+
+
+.mybuttonclass2 {
+  background-image: url(https://i.warosu.org/data/sci/img/0067/71/1411506402282.png);
+  background-repeat: repeat-space;
+  //border: none;
+  background-size: 50px 50px;
+  height: 60px;
+  width: 100px;
+  border-width: 5px;
+}
+
+.mybuttonclass3 {
+  background-image: url(https://i.warosu.org/data/sci/img/0067/71/1411506402282.png);
+  background-repeat: repeat-space;
+  //border: none;
+  background-size: 50px 50px;
+  height: 60px;
+  width: 150px;
+  border-width: 5px;
+}
+
+.mybuttonclass4 {
+  background-image: url(https://i.warosu.org/data/sci/img/0067/71/1411506402282.png);
+  background-repeat: repeat-space;
+  //border: none;
+  background-size: 50px 50px;
+  height: 60px;
+  width: 200px;
+  border-width: 5px;
+}
+
+.mybuttonclass5 {
+  background-image: url(https://i.warosu.org/data/sci/img/0067/71/1411506402282.png);
+  background-repeat: repeat-space;
+  //border: none;
+  background-size: 50px 50px;
+  height: 60px;
+  width: 250px;
+  border-width: 5px;
+}
+
+.mybuttonclass6 {
+  background-image: url(https://i.warosu.org/data/sci/img/0067/71/1411506402282.png);
+  background-repeat: repeat-space;
+  //border: none;
+  background-size: 50px 50px;
+  height: 60px;
+  width: 300px;
+border-width: 5px;
+}
+
+.mybuttonclass7 {
+  background-image: url(https://i.warosu.org/data/sci/img/0067/71/1411506402282.png);
+  background-repeat: repeat-space;
+  //border: none;
+  background-size: 50px 50px;
+  height: 60px;
+  width: 350px;
+  border-width: 5px;
+}
+
+
+
+
+
+#revealscore {
+  font-family: "helvetica";
+  font-size: 50px;
+}
+
+form {
+  font-size: 24px;
+  option: 24px;
+  
+  float:left;
+  clear:right;
+  
+  
+  
+}
+
+select { 
+  
+   font-size: 18px;
+  font-family: "helvetica";
+}
+
+#removebuttons {
+  color:red;
+}
+
+.symbols {
+  font-size: 40px;
+  //color: #c19b6c;
+}
