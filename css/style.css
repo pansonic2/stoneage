@@ -111,7 +111,7 @@ select {
 
 .symbols {
   font-size: 40px;
-  margin-left: 50%;
+  text-align: center;
   margin-bottom:1%;
   //color: #c19b6c;
 }
@@ -122,6 +122,7 @@ select {
 }
 
 #revealscore {
-  margin-left:44%;
+  text-align: center;
   margin-bottom:1%;
 }
+
