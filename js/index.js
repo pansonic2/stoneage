@@ -1,40 +1,62 @@
 $(document).ready(function(){
   //type_multiplier = 3;
   mmm=0;
-  $("#choosewood").on("click", change_to_wood)
+  $("#choosewood").on("click", change_to_wood);
   function change_to_wood(){
     $("#chosensymbol").html("wood");
-    $("#chosensymbol").css("color", "brown")
+    $("#chosensymbol").css("color", "brown");
     type_multiplier=3;
   }
-   $("#choosestone").on("click", change_to_stone)
-  function change_to_stone(){
-    $("#chosensymbol").html("stone")
-    $("#chosensymbol").css("color", "grey")
+  $("#choosebrick").on("click", change_to_brick);
+  function change_to_brick(){
+    $("#chosensymbol").html("brick");
+    $("#chosensymbol").css("color", "red");
     type_multiplier=4;
   }
-  $("#removebuttons").on("click", removbtn)
+  
+   $("#choosestone").on("click", change_to_stone);
+  function change_to_stone(){
+    $("#chosensymbol").html("stone");
+    $("#chosensymbol").css("color", "grey");
+    type_multiplier=5;
+  }
+  
+  $("#choosegold").on("click", change_to_gold);
+  function change_to_gold(){
+    $("#chosensymbol").html("gold");
+    $("#chosensymbol").css("color", "gold");
+    type_multiplier=6;
+  }
+  
+  $("#choosefood").on("click", change_to_food);
+  function change_to_food(){
+    $("#chosensymbol").html("food");
+    $("#chosensymbol").css("color", "green");
+    type_multiplier=2;
+  }
+  
+  $("#removebuttons").on("click", removbtn);
   function removbtn(){
   //$('form:last-child').remove();
   //$('form:last-child').remove();
   //$('form:last-child').remove();
     $('#revealscore').html("Choose one.");
     $('br').remove();
-  };
-  $("#dice1").on("click", getThatNumber1)
+  }
+  $("#dice1").on("click", getThatNumber1);
   $("#dice1").on("click", DTT);
-  $("#dice2").on("click", getThatNumber2)
+  $("#dice2").on("click", getThatNumber2);
   $("#dice2").on("click", DTT);
-  $("#dice3").on("click", getThatNumber3)
-  $("#dice3").on("click",DTT)
-  $("#dice4").on("click", getThatNumber4)
-  $("#dice4").on("click",DTT)
-  $("#dice5").on("click", getThatNumber5)
-  $("#dice5").on("click", DTT)
-  $("#dice6").on("click", getThatNumber6)
-  $("#dice6").on("click", DTT)
-  $("#dice7").on("click", getThatNumber7)
-  $("#dice7").on("click",DTT)
+  $("#dice3").on("click", getThatNumber3);
+  $("#dice3").on("click",DTT);
+  $("#dice4").on("click", getThatNumber4);
+  $("#dice4").on("click",DTT);
+  $("#dice5").on("click", getThatNumber5);
+  $("#dice5").on("click", DTT);
+  $("#dice6").on("click", getThatNumber6);
+  $("#dice6").on("click", DTT);
+  $("#dice7").on("click", getThatNumber7);
+  $("#dice7").on("click",DTT);
   function getThatNumber1(){
     mmm = 1;
   }
