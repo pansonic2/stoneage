@@ -1,16 +1,25 @@
 $(document).ready(function(){
   //type_multiplier = 3;
   mmm=0;
+  tools = 0;
+  total_before_tools = 0;
+  sum = 0;
   $("#choosewood").on("click", change_to_wood);
   function change_to_wood(){
     $("#chosensymbol").html("wood");
     $("#chosensymbol").css("color", "brown");
+    $('#revealscore').html("Choose one.")
+    tools = 0
+    sum=0
     type_multiplier=3;
   }
   $("#choosebrick").on("click", change_to_brick);
   function change_to_brick(){
     $("#chosensymbol").html("brick");
     $("#chosensymbol").css("color", "red");
+    $('#revealscore').html("Choose one.")
+    tools = 0
+    sum=0
     type_multiplier=4;
   }
   
@@ -18,6 +27,9 @@ $(document).ready(function(){
   function change_to_stone(){
     $("#chosensymbol").html("stone");
     $("#chosensymbol").css("color", "grey");
+    $('#revealscore').html("Choose one.")
+    tools = 0
+    sum=0
     type_multiplier=5;
   }
   
@@ -25,6 +37,9 @@ $(document).ready(function(){
   function change_to_gold(){
     $("#chosensymbol").html("gold");
     $("#chosensymbol").css("color", "gold");
+    $('#revealscore').html("Choose one.")
+    tools = 0
+    sum=0
     type_multiplier=6;
   }
   
@@ -32,8 +47,12 @@ $(document).ready(function(){
   function change_to_food(){
     $("#chosensymbol").html("food");
     $("#chosensymbol").css("color", "green");
+    $('#revealscore').html("Choose one.")
+    tools = 0
+    sum=0
     type_multiplier=2;
   }
+  
   
   $("#removebuttons").on("click", removbtn);
   function removbtn(){
@@ -82,20 +101,29 @@ $(document).ready(function(){
   function DTT(){
     arrayofrandom = [];
     sum=0;
+    tools=0;
     //mmm=5;
     for (i=0; i<mmm; i++ ){
    arrayofrandom.push(Math.floor(Math.random()*6)+1);
    sum += parseFloat(arrayofrandom[i]) || 0;
-      $("#revealscore").html("Take " + Math.floor(sum / type_multiplier) +" units.");
+   total_before_tools = Math.floor(sum / type_multiplier);
+      $("#revealscore").html("Take " + total_before_tools +" units.");
       //$("#logged").append("You have selected"+ Math.floor(sum / type_multiplier) +" units.");
        console.log(arrayofrandom);
        console.log(sum);
-      
-    }
-    
+     // console.log("total before tools " + total_before_tools);
       }
   
+      }
   
+ $("#plustools").on("click", add_tool);
+  function add_tool(){
+    tools +=1;
+    sum +=1;
+    total_before_tools = Math.floor(sum / type_multiplier);
+    $("#revealscore").html("Take " + total_before_tools +" units. You used " + tools + " tools.");
+    //console.log(total_before_tools)
+  }
   }
   
 
